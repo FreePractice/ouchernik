@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<label>Student<input type="radio" onchange="registerType();" name="typeOfRegister" value="1" checked/></label>
+<label>Teacher<input type="radio" onchange="registerType();" name="typeOfRegister" value="2" /></label>
+
+<div id="register-form-panel">
+
+</div>
+
+@section scripts{
+    <script>
+        registerType();
+
+        function registerType() {
+            var value = $('input[name="typeOfRegister"]:checked').val();
+            var url = "";
+            if (value == 1) {
+                url = "/Account/StudentPartialView";
+            } else {
+                url = "/Account/TeacherPartialView";
+            }
+
+            $("#register-form-panel").load(url);
+        }
+    </script>
+}

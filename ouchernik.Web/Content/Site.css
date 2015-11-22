@@ -1,0 +1,91 @@
+﻿body {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: url('/Images/background.jpg') repeat;
+    color: #3E84A7;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 4px 0 #424242;
+    -ms-box-shadow: 0 0 4px 0 #424242;
+    box-shadow: 0 0 4px 0 #424242;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#upper-header {
+    background-color: #F4E9D5;
+    -webkit-box-shadow: 0 0 4px 0 #424242;
+    -ms-box-shadow: 0 0 4px 0 #424242;
+    box-shadow: 0 0 4px 0 #424242;
+}
+
+.clear-margin {
+    margin: 0;
+}
+
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
+.icon-pdf {
+    background: url('/Images/Icons/icon-pdf.png') no-repeat;
+}
+
+.carousel-control {
+    top: 33%;
+}
+a {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+	}
+    a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+.carousel-control {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #3E84A7;
+    border: 3px solid #fff;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    opacity: .5;
+}
+
+.carousel-control.right {
+    right: 15px;
+    left: auto;
+}
