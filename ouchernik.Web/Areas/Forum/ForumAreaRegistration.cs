@@ -17,7 +17,7 @@ namespace ouchernik.Web.Areas.Forum
             context.MapRoute(
                 "Forum_default",
                 "Forum/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new {  controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

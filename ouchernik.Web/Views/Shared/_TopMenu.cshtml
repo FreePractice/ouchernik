@@ -15,7 +15,7 @@
                 <li>@Html.ActionLink("УЧЕНИЦИ", "About", "Home")</li>
                 <li>@Html.ActionLink("РЕСУРСИ", "Index", "Resources")</li>
                 <li>@Html.ActionLink("КОНТАКТИ", "About", "Home")</li>
-                <li>@Html.ActionLink("ФОРУМ", "About", "Home")</li>
+                <li>@Html.ActionLink("ФОРУМ", "Index", "Home", routeValues: new { area = "Forum"}, htmlAttributes: null)</li>
             </ul>
         </div>
     </div>

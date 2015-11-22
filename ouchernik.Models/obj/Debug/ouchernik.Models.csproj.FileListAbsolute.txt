@@ -1,0 +1,14 @@
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\ouchernik.Models.dll.config
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\ouchernik.Models.dll
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\ouchernik.Models.pdb
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\EntityFramework.dll
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\EntityFramework.xml
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\obj\Debug\ouchernik.Models.csprojResolveAssemblyReference.cache
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\obj\Debug\ouchernik.Models.dll
+E:\DISK D\FreePractice\OU Chernik\ouchernik\ouchernik.Models\obj\Debug\ouchernik.Models.pdb

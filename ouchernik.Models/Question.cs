@@ -32,6 +32,10 @@
 
         public virtual User Author { get; set; }
 
+        public int TagId { get; set; }
+
+        public virtual Tag Tag { get; set; }
+
         public virtual ICollection<Answer> Answers
         {
             get { return this.answers; }

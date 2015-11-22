@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div id="upper-header" class="container">
+        <a href="/Home" class="pull-left"> ОУ "Св.св. Кирил и Методий - с.Черник</a>
+        <div clas="pull-right">
+            @using (Html.BeginForm("Logoff", "Account", new { area = "" }, FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+            {
+                @Html.AntiForgeryToken()
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+                </ul>
+            }
+        </div>
+    </div>
+    @Html.Partial("_TopMenu")
+    <div class="container body-content">
+
+        @RenderBody()
+
+        <hr />
+        <footer class="footer">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li><h4>За нас</h4></li>
+                        <li><a href="">История</a></li>
+                        <li><a href="">Мисия</a></li>
+                        <li><a href="">Традиции</a></li>
+                        <li><a href="">База</a></li>
+                        <li><a href="">Проекти</a></li>
+                        <li><a href="">Постижения</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>За нас</li>
+                        <li>За нас</li>
+                        <li>За нас</li>
+                        <li>За нас</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>За нас</li>
+                        <li>За нас</li>
+                        <li>За нас</li>
+                        <li>За нас</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>За нас</li>
+                        <li>За нас</li>
+                        <li>За нас</li>
+                        <li>За нас</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script>
+        $(function () {
+            var stickyHeaderTop = $('#top-menu').offset().top;
+            var windowWidth = $(window).width();
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > stickyHeaderTop && windowWidth >= 768) {
+                    $('#top-menu').addClass('navbar-fixed-top');
+                } else {
+                    $('#top-menu').removeClass('navbar-fixed-top');
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 10000
+            })
+        });
+    </script>
+</body>
+</html>

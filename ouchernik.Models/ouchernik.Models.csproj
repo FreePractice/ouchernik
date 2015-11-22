@@ -67,6 +67,7 @@
     <Compile Include="Rubric.cs" />
     <Compile Include="SchoolClass.cs" />
     <Compile Include="SchoolSubject.cs" />
+    <Compile Include="Tag.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Vote.cs" />
   </ItemGroup>
